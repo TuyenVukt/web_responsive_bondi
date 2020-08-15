@@ -1,0 +1,63 @@
+*{
+    margin: 0;padding: 0;
+}
+html,body{width: 100%}
+a{text-decoration: none}
+ul{list-style: none}
+#menu ul{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: gray;
+    font-family: 'Segoe UI';
+    font-size: 18px;  
+    font-weight: 500;
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+#menu >i {
+    position: absolute;
+    right: 20px;
+    color: white;
+    line-height: 40px;
+    display: none;
+    font-size: 18px;
+}
+#close{
+    display: none;
+}
+#menu ul >li{
+    display: inline;
+}
+#menu ul >li>a{
+    display: inline-block;
+    color: white;
+    line-height: 40px;
+    padding-right:15px; 
+    padding-left:15px; 
+    transition: 0.4s; 
+}
+#menu ul >li>a:hover{
+    background-color: white;
+    color: gray;
+
+}
+
+@media only screen and (max-width: 768px){
+    
+    #menu ul li{display: none}
+    #menu >i{display: inline-block}
+    .mobile-mode{
+        text-align: center;
+        z-index: 99;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        
+    }
+    .mobile-mode ul li{
+        display: block;
+        color: black;
+    }
+}

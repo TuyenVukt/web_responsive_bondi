@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="project2.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="menu">
+           <i class="fa fa-bars" aria-hidden="true" onclick="open_menu();"></i>
+           
+        <ul> 
+            <a href="" onclick="close_menu();" id="close" >close <i class="fa fa-times" aria-hidden="true"></i></a>
+            <li><a href="">HOME</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">SPORTS</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </div>  
+    <script type="text/javascript">
+    function open_menu(){
+        var x = document.getElementById('menu');
+        x.classList.add('mobile-mode')
+    }
+    function close_menu(){
+        var x = document.getElementById('menu');
+        x.classList.remove('mobile-mode')
+    }
+    </script> 
+</body>
+</html>
