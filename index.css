@@ -742,8 +742,8 @@ p.p12 {
         margin-bottom: 0!important;
     }
     .team {
-        display: unset;
-        justify-content: space-between;
+        display: unset!important;
+        justify-content: space-between!important;
     }
     .team .team-item {
         display: block;
